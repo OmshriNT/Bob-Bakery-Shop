@@ -39,6 +39,7 @@ body {
 }
 
 .nav-list a {
+  color: #222;
   font-size: 1.5em;
   text-decoration: none;
   margin: 15px;
@@ -46,6 +47,10 @@ body {
 
 .nav-list a:hover {
   color: orangered;
+}
+
+.nav-list a:visited {
+  color: blueviolet;
 }
 
 /* footer  */
