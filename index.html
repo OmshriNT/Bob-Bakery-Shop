@@ -10,70 +10,38 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" async></script>
     <title>Bob Sweet Shop | Home</title>
   </head>
   <body class="container full-ht-grow">
     <header class="main-header">
       <img class="header-image" src="./images/logo.jpg" alt="" width="80px" />
-      <h1 class="header-title">Bob's Sweet Shop</h1>
       <nav class="main-nav nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#store">Store</a></li>
+          <li><a href="#cart">Cart</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="hero-image"></div>
-
-    <!-- <section>
-      <h2 class="section-title">Delicious desserts to your delight</h2>
-
-      <div class="top-desserts">
-        <div class="panel active">
-          <img src="./images/Croissants.webp" alt="" width="400" height="300" />
-          <h3 class="dessert-title">Croissants</h3>
-        </div>
-
-        <div class="panel">
-          <img src="./images/Macaroons.webp" alt="" width="400" height="300" />
-          <h3 class="dessert-title">Macaroons</h3>
-        </div>
-
-        <div class="panel">
-          <img src="./images/crepes.jpg" alt="" width="400" height="300" />
-          <h3 class="dessert-title">Crepes with honey</h3>
-        </div>
-
-        <div class="panel">
-          <img
-            src="./images/Crème Brûlée.webp"
-            alt=""
-            width="400"
-            height="300"
-          />
-          <h3 class="dessert-title">Crème Brûlée</h3>
-        </div>
-
-        <div class="panel">
-          <img
-            src="./images/caramel macchiato.webp"
-            alt=""
-            width="400"
-            height="300"
-          />
-          <h3 class="dessert-title">Caramel Macchiato</h3>
-        </div>
-      </div>
-    </section> -->
+    <div class="hero-image">
+      <h1 class="header-title">Bob's <span>Sweet</span> <span>Shop</span></h1>
+    </div>
 
     <section id="store" class="content-section">
       <h2 class="section-header">Delicious desserts to your delight</h2>
       <div class="shop-items">
         <div class="shop-item">
           <span class="shop-item-title">Croissants</span>
-          <img src="./images/Croissants.webp" alt="" width="400" height="300" />
+          <img
+            class="shop-item-image"
+            src="./images/Croissants.webp"
+            alt=""
+            width="400"
+            height="300"
+          />
           <div class="shop-item-details">
             <span class="shop-item-price">$12.99</span>
             <button class="btn btn-primary shop-item-button" type="button">
@@ -83,7 +51,13 @@
         </div>
         <div class="shop-item">
           <span class="shop-item-title">Macaroons</span>
-          <img src="./images/Macaroons.webp" alt="" width="400" height="300" />
+          <img
+            class="shop-item-image"
+            src="./images/Macaroons.webp"
+            alt=""
+            width="400"
+            height="300"
+          />
           <div class="shop-item-details">
             <span class="shop-item-price">$14.99</span>
             <button class="btn btn-primary shop-item-button" type="button">
@@ -93,7 +67,13 @@
         </div>
         <div class="shop-item">
           <span class="shop-item-title">Crepes with honey</span>
-          <img src="./images/crepes.jpg" alt="" width="400" height="300" />
+          <img
+            class="shop-item-image"
+            src="./images/crepes.jpg"
+            alt=""
+            width="400"
+            height="300"
+          />
           <div class="shop-item-details">
             <span class="shop-item-price">$9.99</span>
             <button class="btn btn-primary shop-item-button" type="button">
@@ -104,6 +84,7 @@
         <div class="shop-item">
           <span class="shop-item-title">Crème Brûlée</span>
           <img
+            class="shop-item-image"
             src="./images/Crème Brûlée.webp"
             alt=""
             width="400"
@@ -120,6 +101,7 @@
         <div class="shop-item">
           <span class="shop-item-title">Caramel Macchiato</span>
           <img
+            class="shop-item-image"
             src="./images/caramel macchiato.webp"
             alt=""
             width="400"
@@ -135,7 +117,7 @@
       </div>
     </section>
 
-    <section class="content-section">
+    <section id="cart" class="content-section">
       <h2 class="section-header">CART</h2>
       <div class="cart-row">
         <span class="cart-item cart-header cart-column">ITEM</span>
