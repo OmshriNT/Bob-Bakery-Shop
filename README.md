@@ -8,4 +8,4 @@
 
 ### Features
 
-- Add or Remove from the cart
+- Add or remove items from the cart
