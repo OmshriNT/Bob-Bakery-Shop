@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Bob Sweet Shop | Home</title>
+  </head>
+  <body class="container full-ht-grow">
+    <header class="main-header">
+      <img class="header-image" src="./images/logo.jpg" alt="" width="80px" />
+      <h1 class="header-title">Bob's Sweet Shop</h1>
+      <nav class="main-nav nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#store">Store</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-image"></div>
+
+    <!-- <section>
+      <h2 class="section-title">Delicious desserts to your delight</h2>
+
+      <div class="top-desserts">
+        <div class="panel active">
+          <img src="./images/Croissants.webp" alt="" width="400" height="300" />
+          <h3 class="dessert-title">Croissants</h3>
+        </div>
+
+        <div class="panel">
+          <img src="./images/Macaroons.webp" alt="" width="400" height="300" />
+          <h3 class="dessert-title">Macaroons</h3>
+        </div>
+
+        <div class="panel">
+          <img src="./images/crepes.jpg" alt="" width="400" height="300" />
+          <h3 class="dessert-title">Crepes with honey</h3>
+        </div>
+
+        <div class="panel">
+          <img
+            src="./images/Crème Brûlée.webp"
+            alt=""
+            width="400"
+            height="300"
+          />
+          <h3 class="dessert-title">Crème Brûlée</h3>
+        </div>
+
+        <div class="panel">
+          <img
+            src="./images/caramel macchiato.webp"
+            alt=""
+            width="400"
+            height="300"
+          />
+          <h3 class="dessert-title">Caramel Macchiato</h3>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="store" class="content-section">
+      <h2 class="section-header">Delicious desserts to your delight</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Croissants</span>
+          <img src="./images/Croissants.webp" alt="" width="400" height="300" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$12.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Macaroons</span>
+          <img src="./images/Macaroons.webp" alt="" width="400" height="300" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$14.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Crepes with honey</span>
+          <img src="./images/crepes.jpg" alt="" width="400" height="300" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$9.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Crème Brûlée</span>
+          <img
+            src="./images/Crème Brûlée.webp"
+            alt=""
+            width="400"
+            height="300"
+          />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$19.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <span class="shop-item-title">Caramel Macchiato</span>
+          <img
+            src="./images/caramel macchiato.webp"
+            alt=""
+            width="400"
+            height="300"
+          />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$19.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
+    </section>
+
+    <footer class="main-footer">
+      <div class="copyright"><i class="far fa-copyright"></i> 2021</div>
+      <nav class="social-links nav nav-list">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </nav>
+    </footer>
+  </body>
+</html>

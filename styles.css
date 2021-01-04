@@ -1,0 +1,293 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.full-ht-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+.header-title {
+  margin: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+}
+
+.nav-list a {
+  text-decoration: none;
+  margin: 15px;
+}
+
+.nav-list a:hover {
+  color: orangered;
+}
+
+/* footer  */
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* ABOUT section  */
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.desc {
+  padding: 0 0 0 10px;
+  text-align: justify;
+  margin-right: 35px;
+}
+
+.desc > i {
+  display: block;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-section-image {
+  width: 500px;
+}
+
+@media (max-width: 950px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+/* home section  */
+
+.hero-image {
+  background-image: url("./images/bakery-hero-image.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1120px;
+  height: 500px;
+  max-width: 100%;
+}
+
+.top-desserts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.panel {
+  text-align: center;
+}
+
+.panel > img {
+  max-width: 100%;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+/* store section  */
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #56ccf2;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.section-header {
+  font-family: inherit;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shop-item {
+  margin: 10px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.shop-item-image {
+  max-width: 100%;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+/* cart section  */
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+  color: #333;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+  color: #333;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #fff;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+  transform: translate(0.98);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
